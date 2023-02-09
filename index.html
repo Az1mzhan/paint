@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="SASS/style.css">
+    <title>Paint</title>
+</head>
+<body>
+    <div id="page-container">
+        <header>
+            <div id="paint-palette-block">
+            </div>
+            <div id="main-color-block">
+                <button id="main-color-btn"></button>
+            </div>
+            <div id="brush-sz-block">
+                <input type="range" id="brush-sz-range" name="brush-sz-range" min="1" max="8" value="1">
+                <p>Size</p>
+            </div>
+            <div id="tools-block">
+                <p id="tools-title">Tools</p>
+                <button id="brush-btn">
+                    <img src="img/brush.png" alt="brush">
+                </button>
+                <button id="eraser-btn">
+                    <img src="img/eraser.png" alt="eraser">
+                </button>
+                <button id="fill-btn">
+                    <img src="img/fill.png" alt="fill">
+                </button>
+                <button id="text-btn">
+                    <img src="img/text.png" alt="text">
+                </button>
+            </div>
+        </header>
+        <div id="work-space">
+            <div id="canvas">
+                <canvas id="main-canvas"></canvas>
+            </div>
+        </div>
+        <script type="module" src="scripts/app.js"></script>
+    </div>
+</body>
+</html>
